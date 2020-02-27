@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { IconBarComponent } from './icon-bar/icon-bar.component';
 import {ProfileService} from './profile.service';
 import {HttpClientModule} from '@angular/common/http';
+import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,13 @@ import {HttpClientModule} from '@angular/common/http';
     FooterComponent,
     IconBarComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        CdkTableModule
+    ],
   providers: [
     ProfileService
   ],
