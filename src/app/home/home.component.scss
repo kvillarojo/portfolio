@@ -1,0 +1,8 @@
+@import "~bulma-carousel/dist/css/bulma-carousel.min.css";
+
+.banner {
+  background-image: url('src/assets/img/banner.jpg');
+  background-size: cover;
+  //height: 726px;
+  background-repeat: no-repeat;
+}
