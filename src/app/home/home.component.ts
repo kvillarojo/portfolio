@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
 
     this.profileService.getProjects()
       .subscribe(project => {
-        this.projects = project['projects'];
+        this.projects = project['projects'].filter(x => x.role === 'Full Stack');
+        console.log(this.projects);
       });
-
   }
 }

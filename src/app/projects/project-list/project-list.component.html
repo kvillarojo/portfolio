@@ -1,0 +1,42 @@
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Projects
+      </h1>
+      <h2 class="subtitle">
+        Has the list of projects that I have work with...
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero cs-bgcolor is-large">
+  <div class="hero-body  has-small-pd">
+    <div class="container">
+      <div class="columns is-multiline ">
+        <div class="column is-one-quarter" *ngFor="let project of projects;">
+
+          <div class="card has-link" routerLink="/">
+            <div class="card-image">
+              <figure class="image is-4by3 has-background-dark">
+                <img src="{{project.img_url}}" class="img-center-circle" alt="{{projects.nackCount}}">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">{{project.name}}</p>
+                  <p class="subtitle is-6"><a href="{{project.url}}" target="_blank"> {{project.url}} </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+
+  </div>
+</section>
