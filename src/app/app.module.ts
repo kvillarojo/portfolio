@@ -7,20 +7,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './core/components/header/header.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 import { IconBarComponent } from './icon-bar/icon-bar.component';
-import {ProfileService} from './profile.service';
+import {ProfileService} from './core/services/profile.service';
 import {HttpClientModule} from '@angular/common/http';
 import {CdkTableModule} from '@angular/cdk/table';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
-    HeaderComponent,
-    FooterComponent,
     IconBarComponent
   ],
   imports: [
@@ -28,7 +27,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CdkTableModule
+    CdkTableModule,
+    CoreModule,
   ],
   providers: [
     ProfileService
