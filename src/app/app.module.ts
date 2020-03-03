@@ -23,13 +23,13 @@ import {CdkTableModule} from '@angular/cdk/table';
     FooterComponent,
     IconBarComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        CdkTableModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    CdkTableModule
+  ],
   providers: [
     ProfileService
   ],

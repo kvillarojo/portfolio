@@ -13,6 +13,7 @@ body {
   left: 0;
   position: fixed;
   top: 40%;
+  z-index:999;
 }
 #social-sidebar li:first-child a { border-top-right-radius: 5px; }
 #social-sidebar li:last-child a { border-bottom-right-radius: 5px; }

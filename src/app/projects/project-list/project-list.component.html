@@ -1,4 +1,4 @@
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-primary is-bold">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -17,8 +17,8 @@
       <div class="columns is-multiline ">
         <div class="column is-one-quarter" *ngFor="let project of projects;">
 
-          <div class="card has-link" routerLink="/">
-            <div class="card-image">
+          <div class="card has-link">
+            <div class="card-image" routerLink="/projects/{{project.name}}">
               <figure class="image is-4by3 has-background-dark">
                 <img src="{{project.img_url}}" class="img-center-circle" alt="{{projects.nackCount}}">
               </figure>
