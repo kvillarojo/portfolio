@@ -14,6 +14,7 @@ import {ProfileService} from './core/services/profile.service';
 import {HttpClientModule} from '@angular/common/http';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CoreModule} from './core/core.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {CoreModule} from './core/core.module';
     HttpClientModule,
     CdkTableModule,
     CoreModule,
+    FormsModule,
   ],
   providers: [
     ProfileService

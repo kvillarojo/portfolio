@@ -89,15 +89,45 @@
   </div>
 </section>
 
-<section class="hero is-primary">
+<section class="section">
+  <div class="hero-title">
+      <h1 class="title has-text-centered"> LEAVE A MESSAGE </h1>
+  </div>
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        Primary title
-      </h1>
-      <h2 class="subtitle">
-        Primary subtitle
-      </h2>
+      <form #f="ngForm"  (ngSubmit)="onSubmit(f)" novalidate>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Name" name="fullname" ngModel required #fullname="ngModel">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-user"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left has-icons-right">
+                <input class="input is-success" type="email" placeholder="Email" >
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fa fa-check"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder='message'></textarea>
+          </div>
+        </div>
+        <button class="button is-success"> Submit </button>
+      </form>
     </div>
   </div>
+  <div class="divider"></div>
 </section>
